@@ -45,8 +45,7 @@ jobs:
           gstreamer1.0-plugins-good \
           zip unzip autoconf libtool pkg-config
 
-        - name: Instalar Buildozer y Cython
-      run: |
+        - name: Instalar Buildozer y Cython: |
         pip install --upgrade pip
         pip install --user Cython==0.29.36 buildozer
 
