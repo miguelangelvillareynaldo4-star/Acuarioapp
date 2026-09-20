@@ -49,8 +49,7 @@ jobs:
         pip install --upgrade pip
         pip install --user Cython==0.29.36 buildozer
 
-        - name: Compilar APK
-      run: |
+        - name: Compilar APK: |
         export PATH=$PATH:~/.local/bin
         buildozer -v android debug
         
