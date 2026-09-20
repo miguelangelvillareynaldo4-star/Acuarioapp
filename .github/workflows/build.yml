@@ -39,6 +39,7 @@ jobs:
     - name: Compilar APK
       run: |
         export ANDROID_BUILD_TOOLS_VERSION="33.0.2"
+        export ANDROID_NDK_VERSION="25b"
         yes | buildozer -v android debug
 
     - name: Subir el APK generado
