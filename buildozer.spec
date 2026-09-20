@@ -1,4 +1,5 @@
 [app]
+source.dir=.
 title = AcuarioApp
 package.name = acuarioapp
 package.domain = org.acuario
