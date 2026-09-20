@@ -24,16 +24,8 @@ jobs:
     - name: Instalar dependencias del sistema
       run: |
         sudo apt-get update
-        sudo apt-get install -y 
-            git 
-            python3-pip 
-            build-essential 
-            autoconf 
-            libtool 
-            pkg-config 
-            zlib1g-dev 
-            libffi-dev 
-            libssl-dev
+        sudo apt-get install -y git python3-pip build-essential libffi-dev libssl-dev zlib1g-dev
+        
 
     - name: Instalar Buildozer y Cython
       run: |
