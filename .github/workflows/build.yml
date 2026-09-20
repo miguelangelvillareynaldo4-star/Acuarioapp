@@ -45,21 +45,21 @@ jobs:
           gstreamer1.0-plugins-good \
           zip unzip autoconf libtool pkg-config
 
-    - name: Instalar Buildozer y Cython
+        - name: Instalar Buildozer y Cython
       run: |
         pip install --upgrade pip
         pip install --user Cython==0.29.36 buildozer
 
-        - name: Compilar APK
+    - name: Compilar APK
       run: |
         export PATH=$PATH:~/.local/bin
         yes | buildozer -v android debug
-        
 
     - name: Subir el APK generado
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
         path: bin/*.apk
+        
         
         
