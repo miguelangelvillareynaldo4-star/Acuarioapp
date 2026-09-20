@@ -1,10 +1,11 @@
-name: Compilar APK con Python y Buildozer
-
-on:
+- name: Limpiar compilaciones previas
+  run: | 
+    rm -rf .buildozer build .plat
+  
+  -name: Compilar APK con Python y Buildozeron:
   push:
     branches: [ main ]
-
-jobs:
+    jobs:
   build:
     runs-on: ubuntu-latest
 
