@@ -1,5 +1,4 @@
 name: Compilar APK con Python y Buildozer
-
 on:
   push:
     branches: [ main ]
@@ -40,11 +39,11 @@ jobs:
       run: |
         pip install --upgrade pip setuptools
         pip install Cython==0.29.33 buildozer
-
+  
     - name: Limpiar compilaciones previas
       run: |
-        rm -rf .buildozer build .plat
-
+        rm -rf .buildozer build .plat ~/.buildozer
+        
     - name: Compilar APK
       run: |
         buildozer -v android debug
