@@ -45,7 +45,6 @@ jobs:
         rm -rf .buildozer build .plat ~/.buildozer
         
         - name: Compilar APK
-      run: |
         export ANDROID_BUILD_TOOLS_VERSION="33.0.2"
         yes | buildozer -v android debug
         
