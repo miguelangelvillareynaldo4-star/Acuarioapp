@@ -33,7 +33,7 @@ requirements = python3,kivy
 # --- CONFIGURACIÓN ESTABLE DEL SDK ---
 android.api = 33
 android.minapi = 24
-androide.ndk = 25b
+android.ndk = 25b
 andride.ndk_api =24
-androide.archs = arm64-v8a
+android.archs = arm64-v8a
 android.accept_sdk_license = truet
