@@ -16,7 +16,7 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
 # (list) Application version
-version = 0.1
+version = 1.0
 
 # (list) Supported orientations
 orientation = portrait
@@ -32,7 +32,8 @@ requirements = python3,kivy
 
 # --- CONFIGURACIÓN ESTABLE DEL SDK ---
 android.api = 33
-android.min_api = 24
-androide.ndk = 25
+android.minapi = 24
+androide.ndk = 25b
+andride.ndk_api =24
 androide.archs = arm64-v8a
-android.accept_license = truet
+android.accept_sdk_license = truet
